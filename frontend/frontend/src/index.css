@@ -1,0 +1,31 @@
+/* SeatGrid styles */
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /* 7 seats per row */
+  gap: 10px;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.seat {
+  background-color: #facc15;
+  /* yellow seat */
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background-color: #34d399;
+  /* green for selected seat */
+}
+
+.seat.booked {
+  background-color: #9ca3af;
+  /* gray for already booked */
+  cursor: not-allowed;
+}
